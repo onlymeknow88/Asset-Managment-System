@@ -1,0 +1,211 @@
+//primary
+$darkblue: #0e277a;
+$softblue: #1438AE;
+$lightblue: #1F50EF;
+$lightblue2: #E8EBF7;
+
+//secondary
+$darkred: #ba181b;
+$softred: #F8E8E8;
+
+//neutral
+$black: #000000;
+$white: #ffffff;
+$gray: #8F8E95;
+$lightgray: #E9E8EA;
+$darkgray: #4C4A55;
+$softgray: #FAFAFA;
+$softgray1: #f9f9f9;
+$softgray2: #f5f5f5;
+
+//blue
+$blue: #006BA4;
+
+//red
+$red: #A71618;
+
+//yellow
+$yellow: #E3930F;
+$lightyellow: #FFF6E7;
+
+//green
+$green: #007256;
+$lightgreen: #E6F2EF;
+
+//font weights
+$font-weights: (light: 300,
+    normal: 400,
+    medium: 500,
+    bold: 700,
+);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: map-get($font-weights, regular);
+    font-size: 16px;
+    line-height: 1.5;
+
+    // background-color: #f7f7fb;
+}
+
+.btn-master {
+    padding: 5px 15px;
+    border-radius: 8px;
+    border: 0;
+    font-size: 14px;
+    font-weight: map-get($font-weights, regular);
+}
+
+
+//login
+.login-user {
+    .left {
+        background: linear-gradient(90deg, #5876D8 -18.64%, rgba(10, 28, 87, 0.74) 110.18%);
+        width: 50%;
+        // height: 100%;
+        min-height: 900px;
+        float: left;
+
+        .logo {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+
+            display: flex;
+            flex-direction: row;
+
+            h2 {
+                font-size: 30px;
+                font-weight: map-get($font-weights, bold);
+                color: $white;
+                margin: 0 0 0 20px;
+
+                display: flex;
+                align-items: center;
+
+            }
+
+            img {
+                height: 40px;
+            }
+        }
+
+        .text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            margin-top: 247px;
+
+            h1 {
+                font-size: 36px;
+                font-weight: map-get($font-weights, bold);
+                text-align: center;
+                color: $white;
+                margin-bottom: 90px;
+            }
+
+            img {
+                height: 335px;
+            }
+        }
+
+
+    }
+
+    .right {
+        width: 50%;
+        float: right;
+        padding: 120px;
+
+        .logo {
+            width: 60px;
+            margin-bottom: 30px;
+        }
+
+        .title-welcome {
+            font-size: 30px;
+            font-weight: map-get($font-weights, bold);
+            margin-bottom: 70px;
+        }
+
+        .title-signin {
+            font-size: 24px;
+            font-weight: map-get($font-weights, bold);
+            margin-bottom: 50px;
+        }
+
+        .sign-in {
+            .form-group {
+                label {
+                    font-size: 14px;
+                    font-weight: map-get($font-weights, regular);
+                    margin-bottom: 4px;
+                    color: $darkgray;
+                }
+
+                .form-control {
+                    font-size: 14px;
+                    font-weight: map-get($font-weights, regular);
+                    border: 1px solid $lightgray;
+                    border-radius: 4px;
+                    height: 40px;
+                    padding: 0 15px;
+                    color: $black;
+
+                    &:focus {
+                        border: 1px solid $softblue;
+                        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+                    }
+
+                    &::placeholder {
+                        color: $gray;
+                        font-size: 14px;
+                        font-weight: map-get($font-weights, regular);
+                    }
+                }
+
+                a {
+                    font-size: 14px;
+                    font-weight: map-get($font-weights, medium);
+                    color: $softblue;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $lightblue;
+                    }
+                }
+
+                .btn-signin {
+                    @extend .btn-master;
+                    background-color: $softblue;
+                    color: $white;
+                    border: 0;
+                    border-radius: 8px;
+                    font-size: 14px;
+                    height: 40px;
+                    width: 100%;
+                    padding: 0px 15px;
+
+                    &:hover {
+                        background-color: $lightblue;
+                    }
+
+                    &:focus {
+                        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+}
+
