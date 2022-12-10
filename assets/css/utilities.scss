@@ -1,0 +1,222 @@
+//primary
+$darkblue: #0e277a;
+$softblue: #1438AE;
+$lightblue: #1F50EF;
+$lightblue2: #E8EBF7;
+
+//secondary
+$darkred: #ba181b;
+$softred: #F8E8E8;
+
+//neutral
+$black: #000000;
+$white: #ffffff;
+$gray: #8F8E95;
+$lightgray: #E9E8EA;
+$darkgray: #4C4A55;
+$softgray: #FAFAFA;
+$softgray1: #f9f9f9;
+$softgray2: #f5f5f5;
+
+//blue
+$blue: #006BA4;
+
+//red
+$red: #A71618;
+$lightred : #CF5D5F;
+
+//yellow
+$yellow: #E3930F;
+$lightyellow: #FFF6E7;
+
+//green
+$green: #007256;
+$lightgreen: #E6F2EF;
+
+//font weights
+$font-weights: (light: 300,
+    normal: 400,
+    medium: 500,
+    bold: 700,
+);
+
+/* Margin */
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.ml-4 {
+    margin-left: 4px;
+}
+.ml-6 {
+    margin-left: 6px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mr-2 {
+    margin-right: 2px;
+}
+
+.mr-6 {
+    margin-right: 6px;
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.container-main {
+    max-width: 1540px;
+}
+
+/* text color */
+.text-black {
+    color: $black;
+}
+
+.text-lightblue {
+    color: $lightblue;
+}
+
+.text-white {
+    color: $white;
+}
+
+.text-softgray {
+    color: $softgray1;
+}
+
+.text-red-validate {
+    color: $lightred;
+}
+
+.text-gray {
+    color: $gray;
+}
+
+/* color */
+
+.green-color-card {
+    background: linear-gradient(77.61deg, #00CE74 -2.53%, #01AD65 50.96%);
+}
+.blue-color-card {
+    background: linear-gradient(77.61deg, #0090CE -2.53%, #1464AE 50.96%);
+}
+.yellow-color-card {
+    background: linear-gradient(252.77deg, #E3930F 47.93%, #EBBA69 107.58%);
+}
+.red-color-card {
+    background: linear-gradient(253.6deg, #A71618 19.85%, #DE585A 105.28%);
+}
+
+.color-yellow {
+    background-color: $yellow;
+}
+.color-green {
+    background-color: $green;
+}
+
+.color-red {
+    background-color: $red;
+}
+
+.color-darkblue {
+    background-color: $darkblue;
+}
+
+.color-lightblue {
+    background-color: $lightblue2;
+}
+
+.color-lightgray {
+    background-color: $lightgray;
+}
+
+.color-softgray {
+    background-color: $softgray1;
+}
+
+.color-shadow {
+    box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+/* text size */
+.form-text-20 {
+    font-size: 20px;
+}
+
+.form-text-14 {
+    font-size: 14px;
+}
+
+.form-text-13 {
+    font-size: 13px;
+}
+
+.form-text-12 {
+    font-size: 12px;
+}
+
+.form-text-10 {
+    font-size: 10px;
+}
+
+.form-text-8 {
+    font-size: 8px;
+}
+
+/* text align */
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* font weight */
+.text-bold {
+    font-weight: map-get($font-weights, bold);
+}
+.text-medium {
+    font-weight: map-get($font-weights, medium);
+}
+
+.text-decoration {
+    text-decoration: none;
+}
+
+/* box color */
+.box-green {
+    border-top: 6px solid $green;
+}
+.box-warning {
+    border-top: 6px solid $yellow;
+}
+
+.box-danger {
+    border-top: 6px solid $red;
+}
+

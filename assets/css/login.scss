@@ -64,7 +64,8 @@ body {
 //login
 .login-user {
     .left {
-        background: linear-gradient(90deg, #5876D8 -18.64%, rgba(10, 28, 87, 0.74) 110.18%);
+        background-image: url(/assets/img/bg-login.svg);
+        // background: linear-gradient(90deg, #5876D8 -18.64%, rgba(10, 28, 87, 0.74) 110.18%);
         width: 50%;
         // height: 100%;
         min-height: 900px;
@@ -162,6 +163,12 @@ body {
                         border: 1px solid $softblue;
                         box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
                     }
+
+                    &:focus-within {
+                        box-shadow: none !important;
+                    }
+
+
 
                     &::placeholder {
                         color: $gray;

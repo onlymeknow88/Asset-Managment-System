@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
 
+    <!-- datatables -->
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -16,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Styles -->
 </head>
 
 <body>
@@ -48,10 +53,11 @@
                 <div class="header-options">
                     <div class="avatar-profiles">
                         <div class="dropdown-profile">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            <a class="dropdown-toggle d-flex align-items-center href="#" role="button" id="dropdownMenuLink"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="/assets/img/avatar.png" class="rounded-circle" width="40" height="40" alt="">
-                                <!-- <div class="inisial-name">FW</div> -->
+                                <span class="text-black">Hi, tes</span>
+                                <!-- <img src="/assets/img/avatar.png" class="rounded-circle" width="40" height="40" alt=""> -->
+                                <div class="inisial-name">FW</div>
                             </a>
 
                             <ul class="dropdown-menu border-0" aria-labelledby="dropdownMenuLink">
@@ -76,8 +82,9 @@
                         <div class="section-items">
                             <div class="menus">
                                 <div class="items">
-                                    <a href="/index.html" class="item-link active">
+                                    <a href="../index.html" class="item-link active">
                                         <div class="item-icon">
+                                            <!-- <img src="/assets/icon/Dashboard.svg" alt=""> -->
                                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -87,6 +94,16 @@
                                         </div>
                                         <div class="item-title">
                                             Dashboard
+                                        </div>
+                                    </a>
+                                    <a href="job/index.html" class="item-link">
+                                        <div class="item-icon">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.2146 2.68136H14.4646V1.25279C14.4646 1.15458 14.3843 1.07422 14.2861 1.07422H13.0361C12.9379 1.07422 12.8575 1.15458 12.8575 1.25279V2.68136H7.14321V1.25279C7.14321 1.15458 7.06285 1.07422 6.96464 1.07422H5.71463C5.61642 1.07422 5.53606 1.15458 5.53606 1.25279V2.68136H1.78606C1.39097 2.68136 1.07178 3.00056 1.07178 3.39565V18.2171C1.07178 18.6122 1.39097 18.9314 1.78606 18.9314H18.2146C18.6097 18.9314 18.9289 18.6122 18.9289 18.2171V3.39565C18.9289 3.00056 18.6097 2.68136 18.2146 2.68136ZM17.3218 17.3242H2.67892V4.2885H5.53606V5.35993C5.53606 5.45815 5.61642 5.5385 5.71463 5.5385H6.96464C7.06285 5.5385 7.14321 5.45815 7.14321 5.35993V4.2885H12.8575V5.35993C12.8575 5.45815 12.9379 5.5385 13.0361 5.5385H14.2861C14.3843 5.5385 14.4646 5.45815 14.4646 5.35993V4.2885H17.3218V17.3242ZM13.9289 7.94922H12.6968C12.5829 7.94922 12.4736 8.00502 12.4066 8.09654L9.0383 12.7349L7.5941 10.7483C7.52714 10.6568 7.41999 10.601 7.30392 10.601H6.07178C5.92669 10.601 5.84187 10.7662 5.92669 10.8845L8.74812 14.7684C8.78148 14.8141 8.82515 14.8512 8.87557 14.8768C8.92599 14.9024 8.98174 14.9158 9.0383 14.9158C9.09485 14.9158 9.1506 14.9024 9.20102 14.8768C9.25145 14.8512 9.29511 14.8141 9.32847 14.7684L14.074 8.23493C14.1588 8.1144 14.074 7.94922 13.9289 7.94922Z" fill="#1438AE"/>
+                                                </svg>
+                                        </div>
+                                        <div class="item-title">
+                                            All Site Job
                                         </div>
                                     </a>
                                     <a href="#assets" class="item-link" data-bs-toggle="collapse" aria-expanded="false"
@@ -106,18 +123,13 @@
                                     <div class="collapse" id="assets">
                                         <div class="sidebar-dropdown-collapse">
                                             <div class="sidebar-dropdown-content">
-                                                <a href="#" class="sub-item-links">List All</a>
-                                                <a href="#" class="sub-item-links">All Deployed</a>
-                                                <a href="#" class="sub-item-links">All Ready to Deploy</a>
-                                                <a href="#" class="sub-item-links">All Pending</a>
-                                                <a href="#" class="sub-item-links">All Archived</a>
-                                                <a href="#" class="sub-item-links">Requestable</a>
+                                                <a href="hardware/index.html" class="sub-item-links">List All</a>
                                                 <a href="#" class="sub-item-links">Due for Audit</a>
                                                 <a href="#" class="sub-item-links">Overdue for Audit</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="#" class="item-link">
+                                    <a href="/license/index.html" class="item-link">
                                         <div class="item-icon">
                                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -130,7 +142,7 @@
                                             License
                                         </div>
                                     </a>
-                                    <a href="#" class="item-link">
+                                    <a href="accesories/index.html" class="item-link">
                                         <div class="item-icon">
                                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -167,7 +179,7 @@
                                             Accesories
                                         </div>
                                     </a>
-                                    <a href="#" class="item-link">
+                                    <a href="consumables/index.html" class="item-link">
                                         <div class="item-icon">
                                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -193,10 +205,10 @@
                                             </svg>
                                         </div>
                                         <div class="item-title">
-                                            Consumables
+                                            Components
                                         </div>
                                     </a>
-                                    <a href="#user" class="item-link">
+                                    <a href="../users/index.html" class="item-link">
                                         <div class="item-icon">
                                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -228,19 +240,19 @@
                                         <div class="sidebar-dropdown-collapse">
                                             <div class="sidebar-dropdown-content">
                                                 <a href="#" class="sub-item-links">Custom Fields</a>
-                                                <a href="#" class="sub-item-links">Status Labels</a>
-                                                <a href="#" class="sub-item-links">Asset Models</a>
-                                                <a href="#" class="sub-item-links">Categories</a>
-                                                <a href="#" class="sub-item-links">Manufacturers</a>
+                                                <a href="settings/status_label/index.html" class="sub-item-links">Status Labels</a>
+                                                <a href="settings/asset_models/index.html" class="sub-item-links">Asset Models</a>
+                                                <a href="settings/categories/index.html" class="sub-item-links">Categories</a>
+                                                <a href="settings/manucfacture/index.html" class="sub-item-links">Manufacturers</a>
                                                 <a href="#" class="sub-item-links">Suplliers</a>
-                                                <a href="#" class="sub-item-links">Departments</a>
-                                                <a href="#" class="sub-item-links">Locations</a>
+                                                <a href="settings/departments/index.html" class="sub-item-links">Departments</a>
+                                                <a href="settings/locations/index.html" class="sub-item-links">Locations</a>
                                                 <a href="#" class="sub-item-links">Companies</a>
                                                 <a href="#" class="sub-item-links">Depreciation</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="#report" class="item-link" data-bs-toggle="collapse" aria-expanded="false"
+                                    <!-- <a href="#report" class="item-link" data-bs-toggle="collapse" aria-expanded="false"
                                         aria-controls="sidebar-item" role="button">
                                         <div class="item-icon">
                                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -269,7 +281,7 @@
                                                 <a href="#" class="sub-item-links">Depreciation</a>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -294,28 +306,710 @@
                                         </div>
                                     </div>
                                     <div class="sub-items-right">
-                                        <div class="item-button">
-                                            <a href="#" class="btn btn-master btn-add" id="add">Tambah</a>
-                                        </div>
+                                        <!-- <div class="item-button">
+                                            <a href="add.html" class="btn btn-master btn-add" id="add">Add</a>
+                                        </div> -->
                                     </div>
                                 </div>                                
                             </div>
+                        </div>
+
+                        <div class="content-main">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-6">
+                                        <div class="card green-color-card">
+                                            <div class="card-body">
+                                                <div class="float-end mt-3 mr-10" style="position: relative;height: 40px;">
+                                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.5">
+                                                        <g clip-path="url(#clip0_166_4440)">
+                                                        <path d="M2.5 4.27759H0.357143C0.160714 4.27759 0 4.4383 0 4.63473V35.349C0 35.5454 0.160714 35.7062 0.357143 35.7062H2.5C2.69643 35.7062 2.85714 35.5454 2.85714 35.349V4.63473C2.85714 4.4383 2.69643 4.27759 2.5 4.27759ZM39.6875 4.27759H37.5446C37.3482 4.27759 37.1875 4.4383 37.1875 4.63473V35.349C37.1875 35.5454 37.3482 35.7062 37.5446 35.7062H39.6875C39.8839 35.7062 40.0446 35.5454 40.0446 35.349V4.63473C40.0446 4.4383 39.8839 4.27759 39.6875 4.27759ZM6.07143 29.9919H11.0714C11.2679 29.9919 11.4286 29.8312 11.4286 29.6347V4.63473C11.4286 4.4383 11.2679 4.27759 11.0714 4.27759H6.07143C5.875 4.27759 5.71429 4.4383 5.71429 4.63473V29.6347C5.71429 29.8312 5.875 29.9919 6.07143 29.9919ZM20.4018 29.9919H22.5446C22.7411 29.9919 22.9018 29.8312 22.9018 29.6347V4.63473C22.9018 4.4383 22.7411 4.27759 22.5446 4.27759H20.4018C20.2054 4.27759 20.0446 4.4383 20.0446 4.63473V29.6347C20.0446 29.8312 20.2054 29.9919 20.4018 29.9919ZM26.0268 29.9919H33.9732C34.1696 29.9919 34.3304 29.8312 34.3304 29.6347V4.63473C34.3304 4.4383 34.1696 4.27759 33.9732 4.27759H26.0268C25.8304 4.27759 25.6696 4.4383 25.6696 4.63473V29.6347C25.6696 29.8312 25.8304 29.9919 26.0268 29.9919ZM14.6429 29.9919H16.7857C16.9821 29.9919 17.1429 29.8312 17.1429 29.6347V4.63473C17.1429 4.4383 16.9821 4.27759 16.7857 4.27759H14.6429C14.4464 4.27759 14.2857 4.4383 14.2857 4.63473V29.6347C14.2857 29.8312 14.4464 29.9919 14.6429 29.9919ZM11.1161 32.849H6.11607C5.91964 32.849 5.75893 33.0097 5.75893 33.2062V35.349C5.75893 35.5454 5.91964 35.7062 6.11607 35.7062H11.1161C11.3125 35.7062 11.4732 35.5454 11.4732 35.349V33.2062C11.4732 33.0097 11.3125 32.849 11.1161 32.849ZM22.5893 32.849H20.4464C20.25 32.849 20.0893 33.0097 20.0893 33.2062V35.349C20.0893 35.5454 20.25 35.7062 20.4464 35.7062H22.5893C22.7857 35.7062 22.9464 35.5454 22.9464 35.349V33.2062C22.9464 33.0097 22.7857 32.849 22.5893 32.849ZM34.0179 32.849H26.0714C25.875 32.849 25.7143 33.0097 25.7143 33.2062V35.349C25.7143 35.5454 25.875 35.7062 26.0714 35.7062H34.0179C34.2143 35.7062 34.375 35.5454 34.375 35.349V33.2062C34.375 33.0097 34.2143 32.849 34.0179 32.849ZM16.8304 32.849H14.6875C14.4911 32.849 14.3304 33.0097 14.3304 33.2062V35.349C14.3304 35.5454 14.4911 35.7062 14.6875 35.7062H16.8304C17.0268 35.7062 17.1875 35.5454 17.1875 35.349V33.2062C17.1875 33.0097 17.0268 32.849 16.8304 32.849Z" fill="url(#paint0_linear_166_4440)"/>
+                                                        </g>
+                                                        </g>
+                                                        <defs>
+                                                        <linearGradient id="paint0_linear_166_4440" x1="20.0247" y1="8.94299" x2="20.0247" y2="44.143" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        <clipPath id="clip0_166_4440">
+                                                        <rect width="40" height="40" fill="white"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                        </svg>
+                                                        
+                                                        
+                                                    </div>   
+                                                <p class="text-softgray">Total Assets</p>
+                                                <h4 class="text-softgray">1300</h4>
+                                            </div>
+                                            <div class="horizontal-line color-softgray"></div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn-group">
+                                                    <p class="text-softgray">More Info</p>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.3751 7.56758L7.62871 1.71222C7.57693 1.66758 7.51085 1.64258 7.44121 1.64258H5.86085C5.72871 1.64258 5.668 1.80686 5.768 1.89258L12.0216 7.32115H1.57157C1.493 7.32115 1.42871 7.38544 1.42871 7.46401V8.53544C1.42871 8.61401 1.493 8.67829 1.57157 8.67829H12.0198L5.76621 14.1069C5.66621 14.1944 5.72693 14.3569 5.85907 14.3569H7.493C7.52693 14.3569 7.56085 14.3444 7.58585 14.3212L14.3751 8.43186C14.437 8.37811 14.4865 8.31171 14.5205 8.23716C14.5545 8.16261 14.572 8.08164 14.572 7.99972C14.572 7.9178 14.5545 7.83683 14.5205 7.76228C14.4865 7.68773 14.437 7.62133 14.3751 7.56758V7.56758Z" fill="white"/>
+                                                        </svg>
+                                                        
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6">
+                                        <div class="card blue-color-card">
+                                            <div class="card-body">
+                                                <div class="float-end mt-3 mr-10" style="position: relative;height: 40px;">
+                                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.5">
+                                                        <path d="M37.023 10.2421L29.7641 2.98314C29.4292 2.64832 29.0185 2.40278 28.5721 2.26885V2.14832H3.5721C2.78192 2.14832 2.14352 2.78671 2.14352 3.57689V36.434C2.14352 37.2242 2.78192 37.8626 3.5721 37.8626H36.4292C37.2194 37.8626 37.8578 37.2242 37.8578 36.434V12.2599C37.8578 11.501 37.5587 10.7778 37.023 10.2421ZM14.2864 5.3626H25.715V10.0055H14.2864V5.3626ZM34.6435 34.6483H5.35781V5.3626H11.4292V11.434C11.4292 12.2242 12.0676 12.8626 12.8578 12.8626H27.1435C27.9337 12.8626 28.5721 12.2242 28.5721 11.434V6.33582L34.6435 12.4072V34.6483ZM20.0007 16.8805C16.4516 16.8805 13.5721 19.7599 13.5721 23.309C13.5721 26.8581 16.4516 29.7376 20.0007 29.7376C23.5498 29.7376 26.4292 26.8581 26.4292 23.309C26.4292 19.7599 23.5498 16.8805 20.0007 16.8805ZM20.0007 26.8805C18.0275 26.8805 16.4292 25.2822 16.4292 23.309C16.4292 21.3358 18.0275 19.7376 20.0007 19.7376C21.9739 19.7376 23.5721 21.3358 23.5721 23.309C23.5721 25.2822 21.9739 26.8805 20.0007 26.8805Z" fill="url(#paint0_linear_166_4467)"/>
+                                                        </g>
+                                                        <defs>
+                                                        <linearGradient id="paint0_linear_166_4467" x1="20.0028" y1="7.44991" x2="20.0028" y2="47.4499" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        </defs>
+                                                        </svg>
+                                                    </div>   
+                                                <p class="text-softgray">Total License</p>
+                                                <h4 class="text-softgray">1300</h4>
+                                            </div>
+                                            <div class="horizontal-line color-softgray"></div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn-group">
+                                                    <p class="text-softgray">More Info</p>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.3751 7.56758L7.62871 1.71222C7.57693 1.66758 7.51085 1.64258 7.44121 1.64258H5.86085C5.72871 1.64258 5.668 1.80686 5.768 1.89258L12.0216 7.32115H1.57157C1.493 7.32115 1.42871 7.38544 1.42871 7.46401V8.53544C1.42871 8.61401 1.493 8.67829 1.57157 8.67829H12.0198L5.76621 14.1069C5.66621 14.1944 5.72693 14.3569 5.85907 14.3569H7.493C7.52693 14.3569 7.56085 14.3444 7.58585 14.3212L14.3751 8.43186C14.437 8.37811 14.4865 8.31171 14.5205 8.23716C14.5545 8.16261 14.572 8.08164 14.572 7.99972C14.572 7.9178 14.5545 7.83683 14.5205 7.76228C14.4865 7.68773 14.437 7.62133 14.3751 7.56758V7.56758Z" fill="white"/>
+                                                        </svg>
+                                                        
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6">
+                                        <div class="card red-color-card">
+                                            <div class="card-body">
+                                                <div class="float-end mt-3 mr-10" style="position: relative;height: 40px;">
+                                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.5">
+                                                        <path d="M44.4444 11.1111H5.55555C4.81884 11.1111 4.1123 11.4037 3.59136 11.9247C3.07043 12.4456 2.77777 13.1521 2.77777 13.8889V36.1111C2.77777 36.8478 3.07043 37.5543 3.59136 38.0753C4.1123 38.5962 4.81884 38.8889 5.55555 38.8889H44.4444C45.1811 38.8889 45.8877 38.5962 46.4086 38.0753C46.9296 37.5543 47.2222 36.8478 47.2222 36.1111V13.8889C47.2222 13.1521 46.9296 12.4456 46.4086 11.9247C45.8877 11.4037 45.1811 11.1111 44.4444 11.1111V11.1111ZM44.4444 36.1111H5.55555V13.8889H44.4444V36.1111Z" fill="url(#paint0_linear_166_4481)"/>
+                                                        <path d="M9.72223 18.0555H12.5V20.8333H9.72223V18.0555Z" fill="url(#paint1_linear_166_4481)"/>
+                                                        <path d="M15.2778 18.0555H18.0555V20.8333H15.2778V18.0555Z" fill="url(#paint2_linear_166_4481)"/>
+                                                        <path d="M20.8333 18.0555H23.6111V20.8333H20.8333V18.0555Z" fill="url(#paint3_linear_166_4481)"/>
+                                                        <path d="M26.3889 18.0555H29.1667V20.8333H26.3889V18.0555Z" fill="url(#paint4_linear_166_4481)"/>
+                                                        <path d="M31.9445 18.0555H34.7222V20.8333H31.9445V18.0555Z" fill="url(#paint5_linear_166_4481)"/>
+                                                        <path d="M37.5 18.0555H40.2778V20.8333H37.5V18.0555Z" fill="url(#paint6_linear_166_4481)"/>
+                                                        <path d="M9.72223 23.6111H12.5V26.3889H9.72223V23.6111Z" fill="url(#paint7_linear_166_4481)"/>
+                                                        <path d="M15.2778 23.6111H18.0555V26.3889H15.2778V23.6111Z" fill="url(#paint8_linear_166_4481)"/>
+                                                        <path d="M20.8333 23.6111H23.6111V26.3889H20.8333V23.6111Z" fill="url(#paint9_linear_166_4481)"/>
+                                                        <path d="M26.3889 23.6111H29.1667V26.3889H26.3889V23.6111Z" fill="url(#paint10_linear_166_4481)"/>
+                                                        <path d="M31.9445 23.6111H34.7222V26.3889H31.9445V23.6111Z" fill="url(#paint11_linear_166_4481)"/>
+                                                        <path d="M37.5 23.6111H40.2778V26.3889H37.5V23.6111Z" fill="url(#paint12_linear_166_4481)"/>
+                                                        <path d="M37.5 30.5555H40.1944V33.3333H37.5V30.5555Z" fill="url(#paint13_linear_166_4481)"/>
+                                                        <path d="M9.72223 30.5555H12.5V33.3333H9.72223V30.5555Z" fill="url(#paint14_linear_166_4481)"/>
+                                                        <path d="M15.4583 30.5555H34.5555V33.3333H15.4583V30.5555Z" fill="url(#paint15_linear_166_4481)"/>
+                                                        </g>
+                                                        <defs>
+                                                        <linearGradient id="paint0_linear_166_4481" x1="25.0027" y1="15.2345" x2="25.0027" y2="46.3457" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        <linearGradient id="paint1_linear_166_4481" x1="11.1113" y1="18.4679" x2="11.1113" y2="21.579" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        <linearGradient id="paint2_linear_166_4481" x1="16.6668" y1="18.4679" x2="16.6668" y2="21.579" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        <linearGradient id="paint3_linear_166_4481" x1="22.2224" y1="18.4679" x2="22.2224" y2="21.579" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        <linearGradient id="paint4_linear_166_4481" x1="27.778" y1="18.4679" x2="27.778" y2="21.579" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        <linearGradient id="paint5_linear_166_4481" x1="33.3335" y1="18.4679" x2="33.3335" y2="21.579" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        <linearGradient id="paint6_linear_166_4481" x1="38.8891" y1="18.4679" x2="38.8891" y2="21.579" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        <linearGradient id="paint7_linear_166_4481" x1="11.1113" y1="24.0234" x2="11.1113" y2="27.1345" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        <linearGradient id="paint8_linear_166_4481" x1="16.6668" y1="24.0234" x2="16.6668" y2="27.1345" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        <linearGradient id="paint9_linear_166_4481" x1="22.2224" y1="24.0234" x2="22.2224" y2="27.1345" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        <linearGradient id="paint10_linear_166_4481" x1="27.778" y1="24.0234" x2="27.778" y2="27.1345" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        <linearGradient id="paint11_linear_166_4481" x1="33.3335" y1="24.0234" x2="33.3335" y2="27.1345" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        <linearGradient id="paint12_linear_166_4481" x1="38.8891" y1="24.0234" x2="38.8891" y2="27.1345" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        <linearGradient id="paint13_linear_166_4481" x1="38.8474" y1="30.9679" x2="38.8474" y2="34.079" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        <linearGradient id="paint14_linear_166_4481" x1="11.1113" y1="30.9679" x2="11.1113" y2="34.079" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        <linearGradient id="paint15_linear_166_4481" x1="25.0081" y1="30.9679" x2="25.0081" y2="34.079" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        </defs>
+                                                        </svg>
+                                                        
+                                                    </div>   
+                                                <p class="text-softgray">Total Accesories</p>
+                                                <h4 class="text-softgray">1300</h4>
+                                            </div>
+                                            <div class="horizontal-line color-softgray"></div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn-group">
+                                                    <p class="text-softgray">More Info</p>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.3751 7.56758L7.62871 1.71222C7.57693 1.66758 7.51085 1.64258 7.44121 1.64258H5.86085C5.72871 1.64258 5.668 1.80686 5.768 1.89258L12.0216 7.32115H1.57157C1.493 7.32115 1.42871 7.38544 1.42871 7.46401V8.53544C1.42871 8.61401 1.493 8.67829 1.57157 8.67829H12.0198L5.76621 14.1069C5.66621 14.1944 5.72693 14.3569 5.85907 14.3569H7.493C7.52693 14.3569 7.56085 14.3444 7.58585 14.3212L14.3751 8.43186C14.437 8.37811 14.4865 8.31171 14.5205 8.23716C14.5545 8.16261 14.572 8.08164 14.572 7.99972C14.572 7.9178 14.5545 7.83683 14.5205 7.76228C14.4865 7.68773 14.437 7.62133 14.3751 7.56758V7.56758Z" fill="white"/>
+                                                        </svg>
+                                                        
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6">
+                                        <div class="card yellow-color-card">
+                                            <div class="card-body">
+                                                <div class="float-end mt-3 mr-10" style="position: relative;height: 40px;">
+                                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.5">
+                                                        <path d="M5.86334 25.8385C5.90801 23.0071 6.69658 20.4597 8.11518 18.2572C9.57691 16.0679 11.2006 13.9377 12.5563 11.9019C14.7084 8.58308 16.5326 5.14527 17.648 1.61841C18.0357 0.512108 18.9159 -0.113528 20 0.0171056C21.2081 -0.0570614 22.0447 0.586442 22.3519 1.61845C23.5264 5.43737 25.3992 8.77549 27.4686 11.9019C28.8818 14.2059 30.496 15.9842 31.8847 18.2572C33.3915 20.6518 34.123 23.2424 34.1366 25.8385C34.0506 29.7116 32.5267 33.3121 30.0207 35.8718C27.2256 38.5574 23.5485 39.9747 20 40.0002C16.1288 39.9178 12.5382 38.3813 9.99174 35.8718C7.31171 33.0678 5.88888 29.3904 5.86334 25.8385V25.8385ZM12.0685 28.9661C12.1612 31.0051 13.7811 32.4946 15.5964 32.5191C17.6536 32.428 19.1005 30.7808 19.1243 28.9661C19.1243 28.2488 18.9408 27.6234 18.5738 27.0896C18.1704 26.5647 17.7728 26.0213 17.4479 25.5007C16.9332 24.6601 16.4299 23.8242 16.1719 22.9361C16.1052 22.6025 15.9133 22.4607 15.5964 22.5108C15.2961 22.444 15.0959 22.5858 14.9959 22.9361C14.7261 23.8875 14.2546 24.7261 13.7573 25.5007C13.4076 26.0844 12.9884 26.5386 12.619 27.0896C12.2353 27.64 12.0518 28.2655 12.0685 28.9661V28.9661Z" fill="url(#paint0_linear_166_4494)"/>
+                                                        </g>
+                                                        <defs>
+                                                        <linearGradient id="paint0_linear_166_4494" x1="20.0017" y1="5.93782" x2="20.0017" y2="50.7381" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#E9E8EA"/>
+                                                        <stop offset="1" stop-color="#E9E8EA" stop-opacity="0"/>
+                                                        </linearGradient>
+                                                        </defs>
+                                                        </svg>
+                                                    </div>   
+                                                <p class="text-softgray">Total Consumables</p>
+                                                <h4 class="text-softgray">1300</h4>
+                                            </div>
+                                            <div class="horizontal-line color-softgray"></div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn-group">
+                                                    <p class="text-softgray">More Info</p>
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.3751 7.56758L7.62871 1.71222C7.57693 1.66758 7.51085 1.64258 7.44121 1.64258H5.86085C5.72871 1.64258 5.668 1.80686 5.768 1.89258L12.0216 7.32115H1.57157C1.493 7.32115 1.42871 7.38544 1.42871 7.46401V8.53544C1.42871 8.61401 1.493 8.67829 1.57157 8.67829H12.0198L5.76621 14.1069C5.66621 14.1944 5.72693 14.3569 5.85907 14.3569H7.493C7.52693 14.3569 7.56085 14.3444 7.58585 14.3212L14.3751 8.43186C14.437 8.37811 14.4865 8.31171 14.5205 8.23716C14.5545 8.16261 14.572 8.08164 14.572 7.99972C14.572 7.9178 14.5545 7.83683 14.5205 7.76228C14.4865 7.68773 14.437 7.62133 14.3751 7.56758V7.56758Z" fill="white"/>
+                                                        </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-xl-8">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-title d-flex justify-content-between">
+                                                    <h6>Recent Activity</h6>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table
+                                                    class="table hover" width="100%">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Tanngal</th>
+                                                                <th>Admin</th>
+                                                                <th>Action</th>
+                                                                <th>Item</th>
+                                                                <th>Target</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>19-02-2022 19.00</td>
+                                                                <td>Admin User</td>
+                                                                <td>Requested</td>
+                                                                <td>Laptop HP ProBook 430 G8</td>
+                                                                <td>Fadjri Wivindi</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>19-02-2022 19.00</td>
+                                                                <td>Admin User</td>
+                                                                <td>Requested</td>
+                                                                <td>Laptop HP ProBook 430 G8</td>
+                                                                <td>Fadjri Wivindi</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>19-02-2022 19.00</td>
+                                                                <td>Admin User</td>
+                                                                <td>Requested</td>
+                                                                <td>Laptop HP ProBook 430 G8</td>
+                                                                <td>Fadjri Wivindi</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>19-02-2022 19.00</td>
+                                                                <td>Admin User</td>
+                                                                <td>Requested</td>
+                                                                <td>Laptop HP ProBook 430 G8</td>
+                                                                <td>Fadjri Wivindi</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>19-02-2022 19.00</td>
+                                                                <td>Admin User</td>
+                                                                <td>Requested</td>
+                                                                <td>Laptop HP ProBook 430 G8</td>
+                                                                <td>Fadjri Wivindi</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>19-02-2022 19.00</td>
+                                                                <td>Admin User</td>
+                                                                <td>Requested</td>
+                                                                <td>Laptop HP ProBook 430 G8</td>
+                                                                <td>Fadjri Wivindi</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>19-02-2022 19.00</td>
+                                                                <td>Admin User</td>
+                                                                <td>Requested</td>
+                                                                <td>Laptop HP ProBook 430 G8</td>
+                                                                <td>Fadjri Wivindi</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>19-02-2022 19.00</td>
+                                                                <td>Admin User</td>
+                                                                <td>Requested</td>
+                                                                <td>Laptop HP ProBook 430 G8</td>
+                                                                <td>Fadjri Wivindi</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>19-02-2022 19.00</td>
+                                                                <td>Admin User</td>
+                                                                <td>Requested</td>
+                                                                <td>Laptop HP ProBook 430 G8</td>
+                                                                <td>Fadjri Wivindi</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="col-md-12 mt-10">
+                                                    <a href="../job/details.html" class="btn btn-primary btn-sm color-darkblue" style="width: 100%">All View</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-xl-4">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-title d-flex justify-content-between">
+                                                    <h6>Assets by Status</h6>
+                                                    
+                                                </div>
+                                                <div id="donut-chart"></div>
+                                                <div class="description">
+                                                    <div class="row">
+                                                        <div class="item-description">
+                                                            <img class="mr-6" src="../assets/icon/icon_done.png" alt="status" width="12" height="12">
+                                                            <p class="text-black mr-2">Archived</p>
+                                                            <span class="form-text">(1.018)</span>
+                                                        </div>
+                                                        <div class="item-description">
+                                                            <img class="mr-6" src="../assets/icon/icon_onprogress.png" alt="status" width="12" height="12">
+                                                            <p class="text-black mr-2">Ready to Deploy</p>
+                                                            <span class="form-text">(200)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="item-description">
+                                                            <img class="mr-6" src="../assets/icon/icon_pending.png" alt="status" width="12" height="12">
+                                                            <p class="text-black mr-2">Pending</p>
+                                                            <span class="form-text">(1.018)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-xl-5">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-title d-flex justify-content-between">
+                                                    <h6>Asset Location</h6>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table
+                                                    class="table hover" width="100%">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Name</th>
+                                                                <th>Asset</th>
+                                                                <th>Assigned</th>
+                                                                <th>User</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Lammpunut</a></td>
+                                                                <td align="center">14</td>
+                                                                <td align="center">12</td>
+                                                                <td align="center">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Lammpunut</a></td>
+                                                                <td align="center">14</td>
+                                                                <td align="center">12</td>
+                                                                <td align="center">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Lammpunut</a></td>
+                                                                <td align="center">14</td>
+                                                                <td align="center">12</td>
+                                                                <td align="center">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Lammpunut</a></td>
+                                                                <td align="center">14</td>
+                                                                <td align="center">12</td>
+                                                                <td align="center">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Lammpunut</a></td>
+                                                                <td align="center">14</td>
+                                                                <td align="center">12</td>
+                                                                <td align="center">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Lammpunut</a></td>
+                                                                <td align="center">14</td>
+                                                                <td align="center">12</td>
+                                                                <td align="center">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Lammpunut</a></td>
+                                                                <td align="center">14</td>
+                                                                <td align="center">12</td>
+                                                                <td align="center">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Lammpunut</a></td>
+                                                                <td align="center">14</td>
+                                                                <td align="center">12</td>
+                                                                <td align="center">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Lammpunut</a></td>
+                                                                <td align="center">14</td>
+                                                                <td align="center">12</td>
+                                                                <td align="center">0</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="col-md-12 mt-10">
+                                                    <a href="../job/details.html" class="btn btn-primary btn-sm color-darkblue" style="width: 100%">All View</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-xl-7">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-title d-flex justify-content-between">
+                                                    <h6>Asset Category</h6>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table
+                                                    class="table hover" width="100%">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Name</th>
+                                                                <th>Type</th>
+                                                                <th>
+                                                                    <span title="Asset">
+                                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <g clip-path="url(#clip0_659_3704)">
+                                                                            <path d="M1.25 2.13879H0.178571C0.0803571 2.13879 0 2.21915 0 2.31737V17.6745C0 17.7727 0.0803571 17.8531 0.178571 17.8531H1.25C1.34821 17.8531 1.42857 17.7727 1.42857 17.6745V2.31737C1.42857 2.21915 1.34821 2.13879 1.25 2.13879ZM19.8438 2.13879H18.7723C18.6741 2.13879 18.5938 2.21915 18.5938 2.31737V17.6745C18.5938 17.7727 18.6741 17.8531 18.7723 17.8531H19.8438C19.942 17.8531 20.0223 17.7727 20.0223 17.6745V2.31737C20.0223 2.21915 19.942 2.13879 19.8438 2.13879ZM3.03571 14.9959H5.53571C5.63393 14.9959 5.71429 14.9156 5.71429 14.8174V2.31737C5.71429 2.21915 5.63393 2.13879 5.53571 2.13879H3.03571C2.9375 2.13879 2.85714 2.21915 2.85714 2.31737V14.8174C2.85714 14.9156 2.9375 14.9959 3.03571 14.9959ZM10.2009 14.9959H11.2723C11.3705 14.9959 11.4509 14.9156 11.4509 14.8174V2.31737C11.4509 2.21915 11.3705 2.13879 11.2723 2.13879H10.2009C10.1027 2.13879 10.0223 2.21915 10.0223 2.31737V14.8174C10.0223 14.9156 10.1027 14.9959 10.2009 14.9959ZM13.0134 14.9959H16.9866C17.0848 14.9959 17.1652 14.9156 17.1652 14.8174V2.31737C17.1652 2.21915 17.0848 2.13879 16.9866 2.13879H13.0134C12.9152 2.13879 12.8348 2.21915 12.8348 2.31737V14.8174C12.8348 14.9156 12.9152 14.9959 13.0134 14.9959ZM7.32143 14.9959H8.39286C8.49107 14.9959 8.57143 14.9156 8.57143 14.8174V2.31737C8.57143 2.21915 8.49107 2.13879 8.39286 2.13879H7.32143C7.22321 2.13879 7.14286 2.21915 7.14286 2.31737V14.8174C7.14286 14.9156 7.22321 14.9959 7.32143 14.9959ZM5.55804 16.4245H3.05804C2.95982 16.4245 2.87946 16.5049 2.87946 16.6031V17.6745C2.87946 17.7727 2.95982 17.8531 3.05804 17.8531H5.55804C5.65625 17.8531 5.73661 17.7727 5.73661 17.6745V16.6031C5.73661 16.5049 5.65625 16.4245 5.55804 16.4245ZM11.2946 16.4245H10.2232C10.125 16.4245 10.0446 16.5049 10.0446 16.6031V17.6745C10.0446 17.7727 10.125 17.8531 10.2232 17.8531H11.2946C11.3929 17.8531 11.4732 17.7727 11.4732 17.6745V16.6031C11.4732 16.5049 11.3929 16.4245 11.2946 16.4245ZM17.0089 16.4245H13.0357C12.9375 16.4245 12.8571 16.5049 12.8571 16.6031V17.6745C12.8571 17.7727 12.9375 17.8531 13.0357 17.8531H17.0089C17.1071 17.8531 17.1875 17.7727 17.1875 17.6745V16.6031C17.1875 16.5049 17.1071 16.4245 17.0089 16.4245ZM8.41518 16.4245H7.34375C7.24554 16.4245 7.16518 16.5049 7.16518 16.6031V17.6745C7.16518 17.7727 7.24554 17.8531 7.34375 17.8531H8.41518C8.51339 17.8531 8.59375 17.7727 8.59375 17.6745V16.6031C8.59375 16.5049 8.51339 16.4245 8.41518 16.4245Z" fill="#100F16"/>
+                                                                            </g>
+                                                                            <defs>
+                                                                            <clipPath id="clip0_659_3704">
+                                                                            <rect width="20" height="20" fill="white"/>
+                                                                            </clipPath>
+                                                                            </defs>
+                                                                        </svg>
+                                                                    </span>
+                                                                    
+                                                                </th>
+                                                                <th>
+                                                                    <span title="License">
+                                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M18.5115 5.12097L14.882 1.49151C14.7146 1.3241 14.5093 1.20133 14.2861 1.13436V1.0741H1.78606C1.39097 1.0741 1.07178 1.39329 1.07178 1.78838V18.217C1.07178 18.612 1.39097 18.9312 1.78606 18.9312H18.2146C18.6097 18.9312 18.9289 18.612 18.9289 18.217V6.1299C18.9289 5.75044 18.7794 5.38883 18.5115 5.12097ZM7.14321 2.68124H12.8575V5.00267H7.14321V2.68124ZM17.3218 17.3241H2.67892V2.68124H5.71463V5.71695C5.71463 6.11204 6.03383 6.43124 6.42892 6.43124H13.5718C13.9669 6.43124 14.2861 6.11204 14.2861 5.71695V3.16785L17.3218 6.20356V17.3241ZM10.0003 8.44017C8.2258 8.44017 6.78606 9.8799 6.78606 11.6545C6.78606 13.429 8.2258 14.8687 10.0003 14.8687C11.7749 14.8687 13.2146 13.429 13.2146 11.6545C13.2146 9.8799 11.7749 8.44017 10.0003 8.44017ZM10.0003 13.4402C9.01374 13.4402 8.21464 12.6411 8.21464 11.6545C8.21464 10.6678 9.01374 9.86874 10.0003 9.86874C10.987 9.86874 11.7861 10.6678 11.7861 11.6545C11.7861 12.6411 10.987 13.4402 10.0003 13.4402Z" fill="#100F16"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                </th>
+                                                                <th>
+                                                                    <span title="Consumable">
+                                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M2.93167 12.9192C2.954 11.5035 3.34829 10.2298 4.05759 9.12859C4.78845 8.03396 5.60032 6.96886 6.27817 5.95095C7.3542 4.29154 8.26632 2.57263 8.82402 0.809207C9.01787 0.256054 9.45797 -0.0567642 9.99999 0.00855282C10.604 -0.0285307 11.0223 0.293221 11.176 0.809224C11.7632 2.71868 12.6996 4.38774 13.7343 5.95097C14.4409 7.10297 15.248 7.99211 15.9424 9.1286C16.6958 10.3259 17.0615 11.6212 17.0683 12.9193C17.0253 14.8558 16.2633 16.6561 15.0104 17.9359C13.6128 19.2787 11.7743 19.9873 9.99999 20.0001C8.06439 19.9589 6.2691 19.1907 4.99587 17.9359C3.65585 16.5339 2.94444 14.6952 2.93167 12.9192V12.9192ZM6.03425 14.4831C6.08062 15.5026 6.89054 16.2473 7.79819 16.2595C8.8268 16.214 9.55024 15.3904 9.56214 14.4831C9.56214 14.1244 9.47039 13.8117 9.28691 13.5448C9.08522 13.2823 8.88641 13.0107 8.72397 12.7504C8.46661 12.3301 8.21495 11.9121 8.08594 11.4681C8.05259 11.3012 7.95667 11.2304 7.79819 11.2554C7.64805 11.222 7.54797 11.2929 7.49794 11.4681C7.36304 11.9438 7.1273 12.3631 6.87867 12.7504C6.70379 13.0422 6.49419 13.2693 6.30949 13.5448C6.11765 13.82 6.0259 14.1327 6.03425 14.4831V14.4831Z" fill="black"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                </th>
+                                                                <th>
+                                                                    <span title="Component">
+                                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <g clip-path="url(#clip0_659_4558)">
+                                                                            <path d="M17.1423 0H2.85662C2.46153 0 2.14233 0.319196 2.14233 0.714286V19.2857C2.14233 19.6808 2.46153 20 2.85662 20H17.1423C17.5374 20 17.8566 19.6808 17.8566 19.2857V0.714286C17.8566 0.319196 17.5374 0 17.1423 0ZM3.74948 1.60714H16.2495V6.25H3.74948V1.60714ZM16.2495 12.3214H3.74948V7.67857H16.2495V12.3214ZM16.2495 18.3929H3.74948V13.75H16.2495V18.3929ZM9.64233 3.21429H5.53519C5.43698 3.21429 5.35662 3.29464 5.35662 3.39286V4.46429C5.35662 4.5625 5.43698 4.64286 5.53519 4.64286H9.64233C9.74055 4.64286 9.82091 4.5625 9.82091 4.46429V3.39286C9.82091 3.29464 9.74055 3.21429 9.64233 3.21429ZM5.53519 10.7143H9.64233C9.74055 10.7143 9.82091 10.6339 9.82091 10.5357V9.46429C9.82091 9.36607 9.74055 9.28571 9.64233 9.28571H5.53519C5.43698 9.28571 5.35662 9.36607 5.35662 9.46429V10.5357C5.35662 10.6339 5.43698 10.7143 5.53519 10.7143ZM12.8566 16.1607C12.8566 16.3975 12.9507 16.6246 13.1181 16.7921C13.2856 16.9595 13.5127 17.0536 13.7495 17.0536C13.9863 17.0536 14.2134 16.9595 14.3808 16.7921C14.5483 16.6246 14.6423 16.3975 14.6423 16.1607C14.6423 15.9239 14.5483 15.6968 14.3808 15.5294C14.2134 15.3619 13.9863 15.2679 13.7495 15.2679C13.5127 15.2679 13.2856 15.3619 13.1181 15.5294C12.9507 15.6968 12.8566 15.9239 12.8566 16.1607V16.1607Z" fill="#100F16"/>
+                                                                            </g>
+                                                                            <defs>
+                                                                            <clipPath id="clip0_659_4558">
+                                                                            <rect width="20" height="20" fill="white"/>
+                                                                            </clipPath>
+                                                                            </defs>
+                                                                        </svg>
+                                                                    </span>
+                                                                </th>
+                                                                <th>
+                                                                    <span title="Accesories">
+                                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M17.7778 4.44446H2.22223C1.92754 4.44446 1.64493 4.56152 1.43655 4.7699C1.22818 4.97827 1.11111 5.26088 1.11111 5.55557V14.4445C1.11111 14.7391 1.22818 15.0218 1.43655 15.2301C1.64493 15.4385 1.92754 15.5556 2.22223 15.5556H17.7778C18.0725 15.5556 18.3551 15.4385 18.5635 15.2301C18.7718 15.0218 18.8889 14.7391 18.8889 14.4445V5.55557C18.8889 5.26088 18.7718 4.97827 18.5635 4.7699C18.3551 4.56152 18.0725 4.44446 17.7778 4.44446V4.44446ZM17.7778 14.4445H2.22223V5.55557H17.7778V14.4445Z" fill="black"/>
+                                                                            <path d="M3.88889 7.22217H5V8.33328H3.88889V7.22217Z" fill="black"/>
+                                                                            <path d="M6.11111 7.22217H7.22223V8.33328H6.11111V7.22217Z" fill="black"/>
+                                                                            <path d="M8.33334 7.22217H9.44446V8.33328H8.33334V7.22217Z" fill="black"/>
+                                                                            <path d="M10.5555 7.22217H11.6667V8.33328H10.5555V7.22217Z" fill="black"/>
+                                                                            <path d="M12.7778 7.22217H13.8889V8.33328H12.7778V7.22217Z" fill="black"/>
+                                                                            <path d="M15 7.22217H16.1111V8.33328H15V7.22217Z" fill="black"/>
+                                                                            <path d="M3.88889 9.44446H5V10.5556H3.88889V9.44446Z" fill="black"/>
+                                                                            <path d="M6.11111 9.44446H7.22223V10.5556H6.11111V9.44446Z" fill="black"/>
+                                                                            <path d="M8.33334 9.44446H9.44446V10.5556H8.33334V9.44446Z" fill="black"/>
+                                                                            <path d="M10.5555 9.44446H11.6667V10.5556H10.5555V9.44446Z" fill="black"/>
+                                                                            <path d="M12.7778 9.44446H13.8889V10.5556H12.7778V9.44446Z" fill="black"/>
+                                                                            <path d="M15 9.44446H16.1111V10.5556H15V9.44446Z" fill="black"/>
+                                                                            <path d="M15 12.2222H16.0778V13.3333H15V12.2222Z" fill="black"/>
+                                                                            <path d="M3.88889 12.2222H5V13.3333H3.88889V12.2222Z" fill="black"/>
+                                                                            <path d="M6.18332 12.2222H13.8222V13.3333H6.18332V12.2222Z" fill="black"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Mouse</a></td>
+                                                                <td>Accesories</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">IP Phone</a></td>
+                                                                <td>Accesories</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Video Conference</a></td>
+                                                                <td>Accesories</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Mouse</a></td>
+                                                                <td>Accesories</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Mouse</a></td>
+                                                                <td>Accesories</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Mouse</a></td>
+                                                                <td>Accesories</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Mouse</a></td>
+                                                                <td>Accesories</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Mouse</a></td>
+                                                                <td>Accesories</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Mouse</a></td>
+                                                                <td>Accesories</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#" style="text-decoration: none;">Mouse</a></td>
+                                                                <td>Accesories</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>0</td>
+                                                                <td>2</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="col-md-12 mt-10">
+                                                    <a href="../job/details.html" class="btn btn-primary btn-sm color-darkblue" style="width: 100%">All View</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>  
                         </div>
                     </div>
                 </div>
             </div>
 
+            
+
         </div>
     </div>
 
-
-
-
     <!-- Optional JavaScript; choose one of the two! -->
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- Resources -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <!-- <script src="https://code.highcharts.com/modules/export-data.js"></script> -->
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+
+    <!-- Datatables -->
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+
+    <script>
+        $(function () {
+            var table = $('.table').DataTable({
+                responsive: true,
+                scrollY: '225px',
+                scrollCollapse: true,
+                paging: false,
+                bPaginate: false,
+                bInfo : false,
+                bFilter: false,
+                pageLength: 20,
+            });
+           
+        });
+
+        Highcharts.chart('donut-chart', {
+            colors: ['#1438AE','#E3930F', '#007256'],
+            chart: {
+                type: 'pie',
+                margin: [0, 0, 0, 0],
+                spacingTop: 10,
+                spacingBottom: 0,
+                spacingLeft: 0,
+                spacingRight: 0,
+                // width: 250,
+                height: 275,
+            },
+            accessibility: {
+                point: {
+                    valueSuffix: '%'
+                }
+            },
+            title: {
+                text: ''
+            },
+            subtitle: {
+                text: ''
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    size: '70%',
+                    align: 'top',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: false
+                    }
+            },
+            series: [{
+                name: 'Asset',
+                colorByPoint: true,
+                innerSize: '65%',
+                data: [{
+                    name: 'Archived',
+                    y: 68
+                }, {
+                    name: 'Pending',
+                    y: 11
+                }, {
+                    name: 'Ready to Deploy',
+                    y: 8
+                }]
+            }]
+        });
     </script>
 </body>
 

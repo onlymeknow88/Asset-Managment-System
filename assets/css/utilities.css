@@ -1,4 +1,182 @@
 /* Margin */
-.mb-30 {
-    margin-bottom: 30px;
+.mt-10 {
+  margin-top: 10px;
 }
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.ml-4 {
+  margin-left: 4px;
+}
+
+.ml-6 {
+  margin-left: 6px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mr-2 {
+  margin-right: 2px;
+}
+
+.mr-6 {
+  margin-right: 6px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.container-main {
+  max-width: 1540px;
+}
+
+/* text color */
+.text-black {
+  color: #000000;
+}
+
+.text-lightblue {
+  color: #1F50EF;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-softgray {
+  color: #f9f9f9;
+}
+
+.text-red-validate {
+  color: #CF5D5F;
+}
+
+.text-gray {
+  color: #8F8E95;
+}
+
+/* color */
+.green-color-card {
+  background: linear-gradient(77.61deg, #00CE74 -2.53%, #01AD65 50.96%);
+}
+
+.blue-color-card {
+  background: linear-gradient(77.61deg, #0090CE -2.53%, #1464AE 50.96%);
+}
+
+.yellow-color-card {
+  background: linear-gradient(252.77deg, #E3930F 47.93%, #EBBA69 107.58%);
+}
+
+.red-color-card {
+  background: linear-gradient(253.6deg, #A71618 19.85%, #DE585A 105.28%);
+}
+
+.color-yellow {
+  background-color: #E3930F;
+}
+
+.color-green {
+  background-color: #007256;
+}
+
+.color-red {
+  background-color: #A71618;
+}
+
+.color-darkblue {
+  background-color: #0e277a;
+}
+
+.color-lightblue {
+  background-color: #E8EBF7;
+}
+
+.color-lightgray {
+  background-color: #E9E8EA;
+}
+
+.color-softgray {
+  background-color: #f9f9f9;
+}
+
+.color-shadow {
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* text size */
+.form-text-20 {
+  font-size: 20px;
+}
+
+.form-text-14 {
+  font-size: 14px;
+}
+
+.form-text-13 {
+  font-size: 13px;
+}
+
+.form-text-12 {
+  font-size: 12px;
+}
+
+.form-text-10 {
+  font-size: 10px;
+}
+
+.form-text-8 {
+  font-size: 8px;
+}
+
+/* text align */
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* font weight */
+.text-bold {
+  font-weight: 700;
+}
+
+.text-medium {
+  font-weight: 500;
+}
+
+.text-decoration {
+  text-decoration: none;
+}
+
+/* box color */
+.box-green {
+  border-top: 6px solid #007256;
+}
+
+.box-warning {
+  border-top: 6px solid #E3930F;
+}
+
+.box-danger {
+  border-top: 6px solid #A71618;
+}/*# sourceMappingURL=utilities.css.map */
